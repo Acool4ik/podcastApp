@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcasts</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body class="row night">
+
+    <div class="preloader-wrapper big active hidden-spinner">
+        <div class="spinner-layer spinner-yellow-only" style="z-index: 10000;">
+            <div class="circle-clipper left">
+              <div class="circle"></div>
+            </div><div class="gap-patch">
+              <div class="circle"></div>
+            </div><div class="circle-clipper right">
+              <div class="circle"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal">
+        <div class="row">
+            <div class="col s12 rem17-b">
+                <ul class="tabs N/A transparent">
+                    <li class="tab col s6"><a href="#in">Sign In</a></li>
+                    <li class="tab col s6"><a href="#exit">Exit</a></li>
+                </ul>
+            </div>
+
+            <div id="in" class="col s12">
+                <div class="valign-wrapper section row">
+                    <span class="col s6 p-size center-align">Log in with:</span> 
+                    &nbsp; 
+                    <span class="col s6 center-align" id="container-log-in">
+                        <svg data-id="google" xmlns="http://www.w3.org/2000/svg" style="cursor: pointer;" width="24" height="24" fill="none"><path d="M5.319 14.504l-.835 3.118-3.054.065A11.946 11.946 0 010 12c0-1.99.484-3.866 1.342-5.519l2.719.499 1.19 2.702A7.133 7.133 0 004.868 12c0 .881.16 1.725.452 2.504z" fill="#FBBB00"/><path d="M23.79 9.758a12.028 12.028 0 01-.053 4.747 11.998 11.998 0 01-4.225 6.853l-3.424-.175-.485-3.025a7.152 7.152 0 003.077-3.652h-6.416V9.758H23.79z" fill="#518EF8"/><path d="M19.512 21.357A11.95 11.95 0 0112 24c-4.57 0-8.543-2.554-10.57-6.313l3.889-3.184a7.135 7.135 0 0010.284 3.654l3.909 3.2z" fill="#28B446"/><path d="M19.66 2.763l-3.888 3.182a7.137 7.137 0 00-10.52 3.736l-3.91-3.2A11.998 11.998 0 0112 0a11.95 11.95 0 017.66 2.763z" fill="#F14336"/></svg>
+                    </span>
+                </div>
+            </div>
+            <div id="exit" class="col s12">
+                <div class="section row center-align">
+                    <div class="p-size col s6">Do you want log out from app?</div>
+                    <div class="col s6">
+                        <btn id="logout" class="waves-effect waves-yellow btn N/A transparent">Log Out</btn>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="left-sidebar col s12 m4 l3 ">
+        <h5>Podcast Questions</h3>
+        <p>by Acool4ik</p>
+
+        <div class="input-field tooltipped" 
+            data-tooltip="your name in google acc or castom name"
+            data-position="bottom"
+        >
+            <input placeholder="Enter your name" style="color: inherit;" id="first_name" type="text" class="validate">
+            <label for="first_name" class="active">Your Name</label>
+        </div>
+    </div>
+
+    <div class="main-content col s12 m8 l9 ">
+        <div>
+            <h4 class="tooltipped" 
+                data-tooltip="It is App for sending questions author's"
+                data-position="bottom"
+            >
+                Ask your question
+            </h4>
+            <p>I will read it and answer it personally :))</p>
+        </div>
+  
+        <form class="input-field">
+            <i class="material-icons prefix">textsms</i>
+            <input type="text" id="autocomplete-input" class="autocomplete" placeholder="Enter your question">
+            <label for="autocomplete-input" class="active">Search panel</label>
+        </form>
+        
+        <p class="p-size">Your questions:</p>
+
+        <div class="container-questions"></div>
+        <div id="all-questions"></div>
+ 
+        <div class="footer-copyright">
+            <p class="row">
+                <span class="col s4">
+                    © 2020 Podcast Work 
+                </span>
+                <a class="grey-text text-lighten-4 col s4" 
+                    href="https://vk.com/cat0_cool4ik_juk_pavuk"
+                >
+                    My Contacts, VK
+                </a>
+                <a class="grey-text text-lighten-4 col s4" 
+                    href="https://vk.com/cat0_cool4ik_juk_pavuk"
+                >
+                    My Contacts, Telegram
+                </a>
+            </p>
+        </div> 
+        
+    </div> 
+
+    <div id="toggle-theme" class="N/A transparent tooltipped"
+        data-tooltip="Toggle theme"
+        data-position="bottom"
+    >
+        <i class="small material-icons">brightness_2</i>
+    </div>
+
+    <div id="toggle-modal" class="N/A transparent tooltipped" 
+        data-target="modal1" 
+        data-tooltip="open modal"
+        data-position="top"
+    >
+        <i class="small material-icons">add_circle_outline</i>
+    </div>
+
+</body>
+</html>

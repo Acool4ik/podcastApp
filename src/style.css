@@ -1,0 +1,121 @@
+@import "~materialize-css/dist/css/materialize.css";
+
+body.row {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.main-content {
+    border-left-width: 1px;
+    border-left-style: solid;
+}
+
+.m2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.mr1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.input-field {
+    margin-top: 45px;
+    margin-bottom: 30px;
+}
+
+input {
+    color: inherit;
+}
+
+.p-size {
+    font-size: 1.2rem;
+}
+
+.rem17-r-l {
+    margin-right: 1.7rem;
+    margin-left: 1.7rem;
+}
+
+.rem17-b {
+    margin-bottom: 1.7rem;
+}
+
+#toggle-theme {
+    position: fixed;
+    top: 30px;
+    right: 50px;
+    background-color: transparent;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+#toggle-modal {
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    background-color: transparent;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.modal {
+    border-width: 1px;
+    border-style: solid;
+}
+
+.day   { background: white; color: black; border-color:black;}
+.night { background: black; color: white; border-color: white;}
+
+.question {
+    padding-top: 2rem;
+    position: relative;
+}
+
+.question-delete {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.active-spinner {
+    position: fixed;
+    left: calc(50% - 32px);
+    top: calc(50vh - 32px);
+}
+
+.hidden-spinner {
+    display: none;
+}
+
+.waves-effect.waves-yellow.btn {
+    border-width: 1px;
+    border-style: solid;
+    border-color: inherit;
+    color: inherit;
+}
+
+.p-t-1rem {
+    padding-top: 1rem;
+}
+
+.m-t-b-1rem {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.refresh {
+    width: 55px !important;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border-width: 1px;
+    border-style: solid;
+    background-color: inherit;
+    text-align: center;
+}
+
